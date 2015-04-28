@@ -46,8 +46,8 @@ public class BroadcastCommand implements CommandCallable {
 		// Command functionality goes here
 		String args[] = message.split(" ");
 		int pCount = server.getOnlinePlayers().size();
-		// Still working out how to process the command
-		return null;
+		// If command worked
+		return Optional.of(CommandResult.success());
 	}
 
 	public boolean testPermission(CommandSource source) {
