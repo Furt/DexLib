@@ -44,8 +44,9 @@ public class BroadcastCommand implements CommandCallable {
 	public Optional<CommandResult> process(CommandSource source, String message)
 			throws CommandException {
 		// Command functionality goes here
-		String args[] = message.split(" ");
-		int pCount = server.getOnlinePlayers().size();
+		//String args[] = message.split(" ");
+		//int pCount = server.getOnlinePlayers().size();
+		server.broadcastMessage((Text)Texts.of(message));
 		// If command worked
 		return Optional.of(CommandResult.success());
 	}
