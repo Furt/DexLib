@@ -1,7 +1,6 @@
 package me.furt.dextopialib;
 
 import java.io.File;
-
 import ninja.leaping.configurate.commented.CommentedConfigurationNode;
 import ninja.leaping.configurate.loader.ConfigurationLoader;
 
@@ -11,7 +10,6 @@ import org.spongepowered.api.event.state.ServerStartedEvent;
 import org.spongepowered.api.event.state.ServerStoppingEvent;
 import org.spongepowered.api.plugin.Plugin;
 import org.spongepowered.api.service.config.DefaultConfig;
-
 import com.google.inject.Inject;
 
 @Plugin(id = "DexLib", name = "DextopiaLibrary", version = "0.1")
@@ -28,6 +26,15 @@ public class DexLib {
 	@DefaultConfig(sharedRoot = false)
 	private File defaultConfig;
 
+	/*
+	private final SqlService sql;
+	public javax.sql.DataSource getDataSource(String jdbcUrl) throws SQLException {
+		if (sql == null) {
+			sql = game.getServiceManager().provide(SqlService.class).get();
+		}
+		return sql.getDataSource(jdbcUrl);
+	} */
+	
 	@Inject
 	@DefaultConfig(sharedRoot = false)
 	private ConfigurationLoader<CommentedConfigurationNode> configManager;
