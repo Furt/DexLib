@@ -1,4 +1,4 @@
-package me.furt.dextopialib.commands;
+package me.furt.dexlib.commands;
 
 import java.util.Collections;
 import java.util.List;

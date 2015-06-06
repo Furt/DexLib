@@ -1,4 +1,4 @@
-package me.furt.dextopialib;
+package me.furt.dexlib;
 
 import java.io.File;
 import ninja.leaping.configurate.commented.CommentedConfigurationNode;
@@ -49,3 +49,4 @@ public class DexLib {
 		getLogger().info("Plugin Disabled.");
 	}
 }
+
